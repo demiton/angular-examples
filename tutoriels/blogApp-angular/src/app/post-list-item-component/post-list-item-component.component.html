@@ -1,0 +1,11 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': loveStatus > 0,
+                'list-group-item-danger': loveStatus < 0 }">
+    <p style="text-align:right"> 01/01/2001</p>
+    <h2>{{ postTitle }}</h2>
+    <p>{{ postMessage }}</p>
+    <button class="btn btn-success"
+            (click)="plus1()">Love it !</button>
+    <button class="btn btn-danger"
+            (click)="min1()">Don't love it !</button>
+</li>
